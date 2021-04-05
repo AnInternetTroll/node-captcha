@@ -21,7 +21,7 @@ class Captcha {
 
     image() {
         return (req, res, next) => {
-            const canvas = new Canvas(this.params.canvasWidth, this.params.canvasHeight)
+            const canvas = new Canvas.Canvas(this.params.canvasWidth, this.params.canvasHeight)
             const ctx = canvas.getContext('2d')
 
             ctx.antialias = 'gray'
